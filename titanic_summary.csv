@@ -1,0 +1,7 @@
+metric,value
+overall_survival,0.4061624649859944
+female_survival,0.7420382165605095
+male_survival,0.18890814558058924
+class1_survival,0.6296296296296297
+class2_survival,0.47282608695652173
+class3_survival,0.24236252545824846
