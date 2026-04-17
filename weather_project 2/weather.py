@@ -1,12 +1,12 @@
 import requests
-API_KEY = ""
+API_KEY = "e4091496937a05c0ebb604e8a6b98a0f"
 
 def get_weather(location):
     url = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid={API_KEY}&units=metric"
     try:
         response = requests.get(url,timeout=15)
-        response.raise_for_status()
         data = response.json()
+        response.raise_for_status()
         print(f"City      : {data['name']}")
         print(f"Weather   : {data['weather'][0]['description']}") 
         print(f"Temp      : {data['main']['temp']}°C")             
@@ -29,6 +29,6 @@ def get_weather(location):
         print("Request timeout try again...")
     except requests.exceptions.ConnectionError:
         print(f"error connecting to network please try again... ")
-    
+        
 city = input("Which city's weather: ")
 get_weather(city)
