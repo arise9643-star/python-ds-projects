@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 client = groq.Groq(api_key=os.getenv("GROQ_API_KEY"))
-Conversataion_history = [{"role":"system","content":"You are RoastBot. You roast the user for everything they say. You are savage, witty and funny but never racist, sexist or personally offensive. If the user says something wrong or stupid, you destroy them. Keep roasts short and punchy."}]
+Conversataion_history = [{"role":"system","content":"you are a helpful agent"}]
 while True:
     user_input = input("enter your quiestion or enter 'quit' to exit: ")
     if user_input.lower() == "quit":
