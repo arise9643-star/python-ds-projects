@@ -1,0 +1,4 @@
+Our company is called TechCorp. We were founded in 2020. 
+Our CEO is John Smith. We sell AI powered software. 
+Our main product is called SmartAI. It costs $99 per month.
+Our support email is support@techcorp.com.
