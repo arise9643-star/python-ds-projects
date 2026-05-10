@@ -1,4 +1,4 @@
-from langchain_community.document_loaders import TextLoader      
+from langchain_community.document_loaders import pdf_loader, text_loader    
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS            
 from langchain_community.embeddings import HuggingFaceEmbeddings 
